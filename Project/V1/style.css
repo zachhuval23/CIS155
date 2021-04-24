@@ -95,13 +95,26 @@ body {
 /* Footer */
   
 .footer {
-  padding: 20px;
+  overflow: hidden;
+  background-color: #16213e;
+  margin-top:20px;
+ 
+}
+
+/* Styles the footer links */
+.footer a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
-  background: #16213e;
-  color:white;
-  margin-top: 20px;
+  padding: 14px 16px;
   text-decoration: none;
-  word-spacing: 5px;
+}
+
+/* Change color on hover */
+.footer a:hover {
+  background-color: #3c415c;
+  color: white;
 }
 
 
