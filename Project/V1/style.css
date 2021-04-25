@@ -3,7 +3,7 @@
 *{
   box-sizing: border-box;
 }
-
+/* To Do: look for slightly less generic sans font... */
 body {
   font-family: 'Source Sans Pro';
   padding: 10px;
@@ -22,7 +22,7 @@ body {
   font-size: 50px;
 }
 
-/* Style the top navigation bar */
+/* Styles the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #3c415c;
@@ -38,28 +38,38 @@ body {
   text-decoration: none;
 }
 
-/* Change color on hover */
+/* Change topnav color on hover */
 .topnav a:hover {
   background-color: #16213e;
   color: white;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
+/* Create two equal columns that float next to each other */
 .leftcolumn {   
   float: left;
-  width: 80%;
+  width: 50%;
 }
 
-/* Right column */
 .rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: #1a1a2e;
+  padding-left: 20px;
+}
+
+/* Creates two uneven columns. Using right side to pin about info. */
+.rightcolumn2 {
   float: left;
   width: 20%;
   background-color: #1a1a2e;
   padding-left: 20px;
 }
+.leftcolumn2 {   
+  float: left;
+  width: 80%;
+}
 
-/* Fake image - I am using this for placeholders. For V2 I want to setup independent classes for each image */
+/* Images + fake img placeholder */
 .fakeimg {
   background-color: #aaa;
   width: 100%;
@@ -77,16 +87,39 @@ body {
   height: 50%;
 }
 
-/* Adds a card effect for articles */
+/* card effect for articles */
 .card {
   background-color: #3c415c;
   color:white;
   padding: 20px;
   margin-top: 20px;
 }
+.card-right{
+  background-color: #3c415c;
+  color:white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+.card-right a{
+  text-align: center;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.card-right a:hover{
+  background-color: #16213e;
+  color: white;
+}
 
 /* Clear floats after the columns */
 .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row2:after{
   content: "";
   display: table;
   clear: both;
@@ -98,7 +131,11 @@ body {
   overflow: hidden;
   background-color: #16213e;
   margin-top:20px;
- 
+}
+.footer p{
+  color: white;
+  padding-right: 15px;
+  float:right;
 }
 
 /* Styles the footer links */
@@ -106,12 +143,12 @@ body {
   float: left;
   display: block;
   color: #f2f2f2;
-  text-align: center;
+  text-align: left;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Change color on hover */
+/* Change the footer link color on hover */
 .footer a:hover {
   background-color: #3c415c;
   color: white;
@@ -119,8 +156,15 @@ body {
 
 
 /* Responsive layout - when the screen is less than xx px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 1060px) {
   .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .leftcolumn2, .rightcolumn2 {   
     width: 100%;
     padding: 0;
   }

@@ -15,15 +15,16 @@
     What was done:
 
     For the V1 portion of my project, my main concern was getting a working and responsive site created so that I can add content more easily as I go along. My goal for the V2 portion of the project is to determine which other pages I will include and design the layout, as well as adding some of my own personal content to the site. I would also like to add some more elements so my pages don't seem so bland.
-
+    
     Content/Structure Sources:
   
     Font: https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap
 
-    Colors: For colors I am just using the built in slider in VScode and Color Selector from Windows PowerToys. Right now my site is just default dark mode due to the way i setup my color pallette, but I might try to figure out how to do an interactive light mode in the future.
-
+    Link to Emoji codes: https://www.w3schools.com/charsets/ref_emoji.asp
+    
     Link to PowerToys: https://docs.microsoft.com/en-us/windows/powertoys/
 
+    Colors: For colors I am just using the built in slider in VScode and Color Selector from Windows PowerToys. Right now my site is just default dark mode due to the way i setup my color pallette, but I might try to figure out how to do an interactive light mode in the future.
  -->
 
  <html>
@@ -31,6 +32,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="photography, music, arpg, dev,portfolio, Path of Exile">
 <meta name="author" content="Zach Huval"/>
@@ -38,21 +40,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 <!-- To Do: Figure out how to make my own logo for this. -->
-<title>  &#9749; Homepage</title>
+<title>  &#9749; Home</title>
 </head>
 
-
-
 <body>
-  <a name="top"></a>
+  <!-- Linked to footer for site navigation -->
+  <a id="top"></a>
+  
   <div class="header">
-  <h1>Hi, I'm Zach.</h1>
+  <h1>&#9749;Hi, I'm Zach.</h1>
   <p>Ignore all the 'lorems' there will be meaningful content in its place one day...</p>
 </div>
 
 <div class="topnav">
   <!-- I think I want to keep the about portion in the sidebar instead of its own page -->
-  <a href="about.html">About</a>
+  <a href="about.html">&#128073; 'About'</a>
   <!-- <a href="#">Link</a> Add these later -->
   <!-- <a href="#">Link</a> -->
 </div>
@@ -63,49 +65,55 @@
       <h2>ProjectV1 - Thoughts and a photo</h2>
       <h5><i>Seattle skyline as seen from the Bremerton ferry.</i> </h5>
         
-      <img class='img1' src="img/Seattle.JPG" alt="">
+      <img class='img1' src="img/Seattle.JPG" alt="Seattle Skyline - Zach Huval">
      
        <p>This is just an example of how I would want a static block to look.</p>
       
        <p>Overtime I would like to build this website up to be a hub for the things that interest me. I would like a way to catalogue and view my thoughts in a format that is visually pleasing to me</p>
       
-       <p>My main goal for the V1 portion of this project was getting my framework setup and layout to my liking. I want this site to be responsive and this is one of my top priorities so I appoligize for how bland it looks at the moment! If you collapse your browser to be under 955px wide you can see it format to mobile view and below 400px the links (when i add more) will stack on top of eachother! Try loading the site on your phone to see how it looks. </p>
+       <p>My main goal for the V1 portion of this project was getting my framework setup and layout to my liking. I want this site to be responsive and this is one of my top priorities so I appoligize for how bland it looks at the moment! If you collapse your browser to be under 1060px wide you can see it format to mobile view and below 400px the links (when i add more) will stack on top of eachother! Try loading the site on your phone to see how it looks. </p>
     </div>
     <div class="card">
       <h2>Title?</h2>
       <h5>Date?</h5>
       
       <p>Something clever?</p>
-      <p>I'll just do another lorem...</p>
+      <p>I'll just do another lorem to fill in the empty space...</p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit cumque error ipsum mollitia. Dicta sint adipisci, ad doloremque accusantium eum tenetur voluptates vel debitis veniam aliquam omnis numquam ipsum tempora.</p>
       
     </div>
   </div>
   <div class="rightcolumn">
-    <div class="card">
-      <h2>About this site</h2>
+    <div class="card-right">
+      <h2 align="center">	&#129488; About this site</h2>
       <div class="fakeimg" style="height:100px;">Img3 (logo maybe?)</div>
       
       <p>This site serves the purpose of housing and reflecting upon the things that interest me most.</p>
       
       <p>This a WIP (work in progress) so expect things to change frequently as I learn new concepts to apply</p>
     </div>
-    <div class="card">
-      <h3>Who am I?</h3>
-      <img class="imgaboutme" src="img/Me.JPG" alt="">
+    <div class="card-right">
+      <h3 align="center"> &#129300; Who am I?</h3>
+      <img class="imgaboutme" src="img/Me.JPG" alt="It's me!">
       <p>I'm Zach of course!</p>
       <p>I am a Navy Veteran currently studying Computer Information Systems at Olympic College</p>
       <p>I love tech, art, and min-maxing Path of Exile characters that I end up deleting anyways.
+    </div>
+    <div class="card-right">
+      <!-- To do: add icons for links -->
+      <h3 align="center">&#9993; Get in touch</h3>
+      <p><a href="https://github.com/zachhuval23" target="_blank">Github</a>
+        <a href="mailto: zachhuval23@gmail.com">Email</a></p>
+        
+      
     </div>
     
   </div>
 </div>
   
   <div class="footer">
-    <!-- Probably will put more contact information here. I should also make this prettier. -->
-      <a href="#top">Jump to top</a>
-      <a href="https://github.com/zachhuval23"target="_blank">Github</a>
-      <a href="mailto: zachhuval23@gmail.com">Contact Me</a>
+      <a href="#top">Jump to top &#9757;</a>
+      <p>Author: Zach Huval, 2021</p> 
   </div>
   
   </body>
