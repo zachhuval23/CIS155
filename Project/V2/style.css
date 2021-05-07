@@ -68,8 +68,8 @@ body {
 
 /* Creates one column in center */
 .centercolumn {   
-  float: center;
-  width: 100;
+  float: left;
+  width: 100%;
 }
 
 /* Images + fake img placeholder */
