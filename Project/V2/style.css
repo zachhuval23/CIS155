@@ -1,0 +1,182 @@
+/* For V2 I ended up changing some of my colors and used gradients for the cards. The link for them is on the showcase.html page under my assignment info comment. I also rounded some of the corners to make it look a little bit cleaner and added a background image to my header with some responsive rules. */
+*{
+  box-sizing: border-box;
+}
+/* To Do: look for slightly less generic sans font... */
+/* Mind changed. It's easy to read 🤷‍♂️*/
+body {
+  font-family: 'Source Sans Pro';
+  padding: 10px;
+  background-color: #040F26;
+}
+
+/* Header/Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url('Img/HeaderBG.jpg');
+  background-size:cover;
+  color:white;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header p{
+  text-shadow: 2px 2px #070505;
+}
+
+/* Styles the top navigation bar */
+.topnav {
+  overflow: hidden;
+  border-radius: 0px 0px 25px 25px;
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change topnav color on hover */
+.topnav a:hover {
+  background-color:#0A1028;
+  color: white;
+}
+
+/* Create two equal columns that float next to each other */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+  background-color: #040F26;
+}
+
+/* Creates one column in center */
+.centercolumn {   
+  float: center;
+  width: 100;
+}
+
+/* Images + fake img placeholder */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.img{
+  width: 100%; 
+  padding: 10px;
+}
+
+.img-showcase{
+  width: 100%; 
+  padding: 10px;
+}
+
+.img-showcase:hover{
+ opacity: .5;
+}
+
+/* card effect for articles */
+.card {
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+/*Separate cards for the about page*/
+.card-about{
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 25px;
+}
+.card-about a{
+  text-align: center;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.card-about a:hover{
+  background-color: #0A1028;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */  
+.footer {
+  overflow: hidden;
+  margin-top:20px;
+  border-radius: 25px;
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.footer p{
+  color: white;
+  padding-right: 15px;
+  float:right;
+}
+
+/* Styles the footer links */
+.footer a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the footer link color on hover */
+.footer a:hover {
+  background-color:#0A1028;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than xx px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1060px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than xx px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}

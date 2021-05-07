@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!-- Note: *If viewing via VScode*
+            Ctrl + K J to exapnd all
+            Ctrl + K 0 to collapse elements                
+-->
+
+<!-- Assignment Info:
+    
+    Zach Huval 
+    May 7th, 2021
+    CIS 155 Web Development
+    Project V2
+    
+    What was done:
+
+    For the V2 portion of my site, I decided to clean a lot of things up and add in some missing content where it was missing. I changed my homepage and my about page to a one column style layout after taking the peer review into consideration. On my new 'showcase' page, I used a two column layout opting to use the article cards I created in V1. I wanted to redo everything and use grids but I started getting myself confused trying to redo all my divs so I just kept it as is. I like how flexbox and grids are naturally responsive, so I want to try and implement it at some point. On the showcase page there is a media rule in place to collapse my columns when the browser is rendered below 1060px. I like the way it ends up looking on mobile and desktop, so I don't want to mess with my layouts much further. I had a good time implementing new styles because honestly I am teriible designer. I enjoyed having the oppurtunity to learn how to be better in that regard, and it's crazy just how much you can do with html and css alone. We haven't even gotten to scripting yet!
+    
+    Content/Structure Sources:
+  
+    Font: https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap
+
+    Link for header BG: https://kntechpower.files.wordpress.com/2016/05/hi-tech-concepts-on-blue-background-header.jpg
+
+    Emojis: I have learned I can just use Win + . to bring up microsofts emoji menu and paste them straight in. No codes needed!
+    
+    Link to PowerToys: https://docs.microsoft.com/en-us/windows/powertoys/
+
+    Colors: For colors I am just using the built in slider in VScode and Color Selector from Windows PowerToys. Right now my site is just default dark mode due to the way i setup my color pallette, but I might try to figure out how to do an interactive light mode in the future.
+
+    Gradients: https://uigradients.com/
+ -->
+
+ <html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="photography, music, arpg, dev,portfolio, Path of Exile">
+<meta name="author" content="Zach Huval"/>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<title>&#9749; Showcase</title>
+</head>
+
+<body>
+  <!-- Linked to footer for site navigation -->
+  <a id="top"></a>
+  
+  <div class="header">
+  <h1>&#9749;Showcase</h1>
+  <p>On this page you will find some examples of the photos I have taken and edited. </p>
+  <p>Clicking them will take you to a wikipedia page about the location!</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">🏠 Home</a>
+  <a href="about.html">🙋‍♂️ About</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>University of Washington Library</em></h1>
+      <a href="https://en.wikipedia.org/wiki/University_of_Washington_Libraries"target="_blank"><img class="img-showcase" src="img/UWLibrary.JPG" alt="University of Washington Library"></a>
+    </div>
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>Cherry Blossoms at UW</em></h1>
+      <a href="https://en.wikipedia.org/wiki/University_of_Washington_Quad" target="_blank"><img class="img-showcase" src="img/UWPink.JPG" alt="University of Washington - Pink"></a>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>Arches on Haeundae Beach</em></h1>
+      <a href="https://en.wikipedia.org/wiki/Haeundae_Beach"target="_blank"><img class="img-showcase" src="img/SKBeach.jpg" alt="Arch on Beach - Busan, South Korea"></a>
+    </div>
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>Buildings and Foliage in Hawaii (Creative I know)</em></h1>
+      <a href="https://en.wikipedia.org/wiki/Waikiki"target="_blank"><img class="img-showcase" src="img/Hawaii.jpg" alt="Hawaii - Buildings and foliage"></a>
+    </div>
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>Industrial ship in the sound (I'm not bad at titles I swear)</em></h1>
+      <a href="https://en.wikipedia.org/wiki/Puget_Sound"target="_blank"><img class="img-showcase" src="img/Tanker.JPG" alt="Industrial ship"></a>
+    </div>
+  </div>
+</div>
+  
+<div class="footer">
+  <a href="#top">Jump to top &#9757;</a>
+  <p>Copyright &copy; 2021 Zach Huval</p> 
+</div>
+  
+  </body>
+  
+  </html>
