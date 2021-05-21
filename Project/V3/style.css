@@ -1,0 +1,240 @@
+/* For V3 I didn't change much besides the topnav and I added the table style rules for the Data page. I got rid of some rules that weren't being used anymore to include one of the media rules I added previously that affected the way the links stack in mobile view. */
+*{
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Source Sans Pro';
+  padding: 10px;
+  background-color: #040F26;
+}
+
+/* Header/Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url(img/HeaderBG.jpg);
+  background-size:cover;
+  color:white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header p {
+  text-shadow: 2px 2px #070505;
+}
+
+/* Styles the top navigation bar */
+
+/* Wrapper */
+#hamnav {
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  background-color:#050915;
+  position: sticky;
+  top: 0;
+}
+
+/* Hide Hamburger */
+#hamnav label, #hamburger { display: none; }
+
+/* Horizontal Menu Items */
+#hamitems { display: flex; }
+#hamitems a {
+  width: 25%; /* 100% / 5 tabs = 20% */
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: #0B1C3E;
+}
+
+/* Mobile Rules for hamburger menu */
+@media screen and (max-width: 768px){
+  /* Show Hamburger Icon */
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #0B1C3E;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* Toggle Show/Hide Menu */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}
+
+/* Style rules for majority of body content below */
+
+/* Create two equal columns that float next to each other */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+  background-color: #040F26;
+}
+
+/* Creates one column in center */
+.centercolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Images + fake img placeholder */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.img{
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.img-showcase{
+  width: 100%; 
+  padding: 10px;
+}
+
+.img-showcase:hover{
+ opacity: .5;
+}
+
+/* card effect for articles */
+.card {
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.card p{
+  text-align: left;
+}
+
+/*Separate cards for the about page*/
+.card-about{
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 25px;
+}
+.card-about a{
+  text-align: center;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: x-large;
+}
+.card-about a:hover{
+  background-color: #0B1C3E;
+  color: white;
+}
+
+/* Style the table */
+table {
+  width:100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  font-size: small;
+}
+
+#t01 tr:nth-child(even) {
+  background-color:#121213;
+}
+
+#t01 tr:nth-child(odd) {
+ background-color: rgb(82, 82, 87);
+}
+
+#t01 th {
+  background-color: #050915;
+  color: white;
+  font-size: large;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */  
+.footer {
+  overflow: hidden;
+  margin-top:20px;
+  border-radius: 10px;
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footer p{
+  color: white;
+  padding-right: 15px;
+  float:right;
+}
+
+.footer a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  background-color:#0B1C3E;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than xx px wide, make the two columns stack on top of each other instead of next to each other. This is used for the showcase page only at the moment. */
+@media screen and (max-width: 768px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}

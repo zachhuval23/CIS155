@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- Note: *If viewing via VScode*
+            Ctrl + K J to exapnd all
+            Ctrl + K 0 to collapse elements                
+-->
+
+<!-- Assignment info on Data page. -->
+    
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="photography, music, arpg, dev,portfolio, Path of Exile">
+<meta name="author" content="Zach Huval"/>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/coffee.png" type="image/x-icon">
+<script src="https://kit.fontawesome.com/b9f1ee5751.js" crossorigin="anonymous"></script>
+<title>Home</title>
+</head>
+
+<body>
+  <!-- Linked to footer for site navigation -->
+  <a id="top"></a>
+  
+  <div class="header">
+  <h1>🏠 Hi, I'm Zach.</h1>
+  <p>Welcome! I am using the homepage to document my site progress. <br>The links below will help you navigate the site.</p>
+</div>
+
+<nav id="hamnav">
+  <!-- Hamburger Menu -->
+  <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+ 
+  <!-- Links/Menu items -->
+  <div id="hamitems">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">🙋‍♂️ About</a>
+    <a href="showcase.html">📷 Showcase</a>
+    <a href="data.html">📊 Data</a>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h2>Project V3</h2>
+      <article>
+      <h3>What Changed?</h3>
+      <i class="fas fa-exchange-alt"></i>
+      <p> For version 3 of the site I decided to re-do my top navigation bar as a flex item. I added a media rule that collapses the links at 768px and adds a hamburger style drop-down menu for easier navigation on mobile. I stickied the nav bar to the top as well so the site is easier to navigate overall on all devices.</p>
+      <p>After reviewing feedback from last verison's discussion, I decided to clean-up my homepage a bit more and make things more uniform. Going forward I will begin to structure my 'about this verison' posts like this one.</p>
+    </article>
+    <article>
+      <h3>What was added?</h3>
+      <i class="far fa-plus-square"></i>
+     <p>I added a new page titled 'Data'. On this new page I added a simple table with responsive properties to allow the data to be easily viewed. I documented all my style properties on my stlye sheet under the 'Style the table' note I added.</p>
+     <p>Other than the addition mentioned above, I only added some small things. I included some font awesome icons throughout and I was able to get a site logo up and working and yes it is a coffee emoji ☕.</p>
+    </article>
+    </div>
+    <div class="card">
+      <h2>Project V2</h2>
+      <p>Overall, I had a good time messing around with different styling techniques for this portion of the project. I decided to make my new page a showcase of sorts, to put some of my own personal photos and to also help get a better grasp on grid style layouts with CSS.
+      </p>
+      <p>I opted to continue using my card style layout after having trouble trying to redo everything via flexbox or grids. I really how easy it is to make your site more responsive using these techniques, so I would like to try and learn more and implement for the next version of the project.
+      </p>
+      <p>After reviewing the feedback from Version 1, I also decided to do away with the about info being another column on the side. I like the one column, infinite scroll, style layout better. I feel like it doesn't try to unnecessarily pull your attention in one way or the other, so I appreciated that feedback!
+      </p>
+    </div>
+    <div class="card">
+      <h2>Project V1</h2>
+       <p>My main goal for the V1 portion of this project was getting my framework setup and layout to my liking. I want this site to be responsive and this is one of my top priorities so I appoligize for how bland it looks at the moment!</p>
+       <p>If you collapse your browser to be under 1060px wide you can see it format to mobile view and below 400px the links (when i add more) will stack on top of eachother! Try loading the site on your phone to see how it looks. </p>
+    </div>
+  </div>
+</div>
+  <div class="footer">
+      <a href="#top"><i class="fas fa-arrow-circle-up"></i> Jump to top</a>
+      <p>Copyright &copy; 2021 Zach Huval</p> 
+  </div> 
+  </body>
+  
+  </html>

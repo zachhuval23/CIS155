@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<!-- Note: *If viewing via VScode*
+            Ctrl + K J to exapnd all
+            Ctrl + K 0 to collapse elements                
+-->
+
+<!-- Assignment Info:
+    
+    Zach Huval 
+    May 18th, 2021
+    CIS 155 Web Development
+    Project V3
+  
+    Module 5 Learning Outcomes:
+
+    For version 3 of my project I added some new things as well as changed some elements to meet the objectives for this portion of the project. I have a media query at the bottom of my CSS style sheet that will collapse any pages that have two columns (the showcase page only for now) into a one column view for mobile. Along with this, I added a media rule in the hamnav portion of my CSS that collapses the links below eachother and adds a menu button at the top left for easy site navigation. I used flex rules on the bar to achieve these results.
+
+    Module 6 Learning Outcomes:
+
+    To meet the module 6 learning outcomes I added a new page to my site titled 'Data'. On this page I included a table with some personal data cataloguing the different countries I have visited. The style rules are documented in my stlye sheet under the 'style the table' note I added.
+
+    Content/Structure Sources:
+  
+    Link for Font: https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap
+
+    Link for header BG: https://kntechpower.files.wordpress.com/2016/05/hi-tech-concepts-on-blue-background-header.jpg
+
+    Link for logo svg: https://favicon.io/emoji-favicons/hot-beverage
+
+    Link to PowerToys: https://docs.microsoft.com/en-us/windows/powertoys/
+
+    Link for gradients: https://uigradients.com/
+
+    Link for fontawesome icons: https://fontawesome.com/icons/github?style=brands
+
+    Emojis: I have learned I can just use Win + . to bring up microsofts emoji menu and paste them straight in. No codes needed!
+    
+    Colors: For colors I am just using the built in slider in VScode and Color Selector from Windows PowerToys. Right now my site is just default dark mode due to the way i setup my color pallette, but I might try to figure out how to do an interactive light mode in the future.
+ -->
+    
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="photography, music, arpg, dev,portfolio, Path of Exile">
+<meta name="author" content="Zach Huval"/>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/coffee.png" type="image/x-icon">
+<script src="https://kit.fontawesome.com/b9f1ee5751.js" crossorigin="anonymous"></script>
+<title>Data</title>
+</head>
+
+<body>
+  <!-- Linked to footer for site navigation -->
+  <a id="top"></a>
+  
+  <div class="header">
+  <h1>📊 Data</h1>
+  <p>On this page you will find a table which includes information about the different countries I have visited.</p>
+</div>
+
+<nav id="hamnav">
+  <!-- Hamburger Menu -->
+  <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+ 
+  <!-- Links/Menu items -->
+  <div id="hamitems">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">🙋‍♂️ About</a>
+    <a href="showcase.html">📷 Showcase</a>
+    <a href="data.html">📊 Data</a>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h2>Where have I been?</h2>
+      <table id="t01">
+        <tr>
+          <th><i class="fas fa-globe"></i> Country</th>
+          <th><i class="fas fa-city"></i> City</th> 
+          <th><i class="fas fa-coins"></i> Local Currency</th>
+        </tr>
+        <tr>
+          <td>South Korea</td>
+          <td>Busan</td>
+          <td>South Korean won</td>
+        </tr>
+        <tr>
+          <td>Singapore</td>
+          <td>Marina Bay</td>
+          <td>Singapore dollar</td>
+        </tr>
+        <tr>
+          <td>Philippines</td>
+          <td>Manila</td>
+          <td>Philippine peso</td>
+        </tr>
+        <tr>
+          <td>United Arab Emirates</td>
+          <td>Dubai</td>
+          <td>United Arab Emirates dirham</td>
+        </tr>
+        <tr>
+          <td>Thailand</td>
+          <td>Pattaya Beach</td>
+          <td>Thai baht</td>
+        </tr>
+        <tr>
+          <td>Japan</td>
+          <td>Okinawa</td>
+          <td>Japanese yen</td>
+        </tr>
+        <tr>
+          <td>France</td>
+          <td>Marseille</td>
+          <td>Euro</td>
+        </tr>
+      </table>
+     
+    </div>
+  </div>
+</div>
+  <div class="footer">
+  <a href="#top"><i class="fas fa-arrow-circle-up"></i> Jump to top</a>
+  <p>Copyright &copy; 2021 Zach Huval</p> 
+  </div>
+
+  </body>
+  
+  </html>   
