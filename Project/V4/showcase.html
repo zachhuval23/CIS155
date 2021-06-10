@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<!-- Note: *If viewing via VScode*
+            Ctrl + K J to exapnd all
+            Ctrl + K 0 to collapse elements                
+-->
+
+<!-- Assignment Info:
+    
+    Zach Huval 
+    June 9th, 2021
+    CIS 155 Web Development
+    Project V4
+  
+    Module 7 Learning Outcomes:
+
+    For version 4 of my project, I opted to exclude a form element. I couldn't really think of any good places to put one, and I'd rather viewers reach out to me, rather than trying to deal with form data.
+
+    Module 8 Learning Outcomes:
+
+    To meet the module 8 learning outcomes, I added to new media elements to my showcase page. On the left column (in desktop view), I included an iframe of an aerial view of UW, provided by their own youtube account. The right column includes a video element of a travel guide provided by Expedia. I think those two additions to my site, and that specific page, are appropriate given the context. To include a simple transition to my site, I added a color change to the hamnav label under the media query.
+
+    Content/Structure Sources:
+  
+    Link for Font: https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap
+
+    Link for header BG: https://kntechpower.files.wordpress.com/2016/05/hi-tech-concepts-on-blue-background-header.jpg
+
+    Link for logo svg: https://favicon.io/emoji-favicons/hot-beverage
+
+    Link for UW youtube video: https://www.youtube.com/watch?v=n5jt4yBrnn4
+
+    Link for expeida video: https://www.youtube.com/watch?v=Qh3wrmSUqaI
+
+    Link to PowerToys: https://docs.microsoft.com/en-us/windows/powertoys/
+
+    Link for gradients: https://uigradients.com/
+
+    Link for fontawesome icons: https://fontawesome.com/icons/github?style=brands
+
+    Emojis: I have learned I can just use Win + . to bring up microsofts emoji menu and paste them straight in. No codes needed!
+    
+    Colors: For colors I am just using the built in slider in VScode and Color Selector from Windows PowerToys. Right now my site is just default dark mode due to the way i setup my color pallette, but I might try to figure out how to do an interactive light mode in the future.
+ -->
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="photography, music, arpg, dev,portfolio, Path of Exile">
+<meta name="author" content="Zach Huval"/>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/coffee.png" type="image/x-icon">
+<script src="https://kit.fontawesome.com/b9f1ee5751.js" crossorigin="anonymous"></script>
+<title>Showcase</title>
+</head>
+
+<body>
+  <!-- Linked to footer for site navigation -->
+  <a id="top"></a>
+  
+  <div class="header">
+  <h1>📷 Showcase</h1>
+  <p>On this page you will find some examples of the photos I have taken and edited. 
+  <br>Clicking them will take you to a wikipedia page about the location!</p>
+  <p>The videos show off more of some of the locations. The sources are all cited in the Assignment Info note at the top of my source code.</p>
+  </div>
+
+  <nav id="hamnav">
+  <!-- Hamburger Menu -->
+  <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+ 
+  <!-- Links/Menu items -->
+  <div id="hamitems">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">🙋‍♂️ About</a>
+    <a href="showcase.html">📷 Showcase</a>
+    <a href="data.html">📊 Data</a>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>University of Washington Library</em></h1>
+      <a href="https://en.wikipedia.org/wiki/University_of_Washington_Libraries" target="_blank"><img class="img-showcase" src="img/UWLibrary.JPG" alt="University of Washington Library"></a>
+    </div>
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>Cherry Blossoms at UW</em></h1>
+      <a href="https://en.wikipedia.org/wiki/University_of_Washington_Quad" target ="_blank"><img class="img-showcase" src="img/UWPink.JPG" alt="University of Washington - Pink"></a>
+    </div>
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em> The University of Washington: Aerial view of the Cherry Blossoms</em></h1>
+      <iframe width="400" height="400"
+      src="https://www.youtube.com/embed/n5jt4yBrnn4?autoplay=1&mute=1">
+      </iframe>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>Arches on Haeundae Beach</em></h1>
+      <a href="https://en.wikipedia.org/wiki/Haeundae_Beach" target="_blank"><img class="img-showcase" src="img/SKBeach.jpg" alt="Arch on Beach - Busan, South Korea"></a>
+    </div>
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>Buildings and Foliage in Hawaii (Creative I know)</em></h1>
+      <a href="https://en.wikipedia.org/wiki/Waikiki" target="_blank"><img class="img-showcase" src="img/Hawaii.jpg" alt="Hawaii - Buildings and foliage"></a>
+    </div>
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>Industrial ship in the sound (I'm not bad at titles I swear)</em></h1>
+      <a href="https://en.wikipedia.org/wiki/Puget_Sound" target="_blank"><img class="img-showcase" src="img/Tanker.JPG" alt="Industrial ship"></a>
+    </div>
+    <div class="card">
+      <h1 style="text-align: center; font-size: medium;"><em>Expedia: Busan Travel Guide</em></h1>
+      <video width="400" height="400" controls>
+        <source src="img/ExpediaBusanVactionGuide2018.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+  
+<div class="footer">
+  <a href="#top"><i class="fas fa-arrow-circle-up"></i> Jump to top</a>
+  <p>Copyright &copy; 2021 Zach Huval</p> 
+</div>
+  
+</body>
+  
+</html>
